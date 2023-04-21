@@ -46,9 +46,9 @@ p {
   line-height: 3.2rem;
 }
 
-.testimonial {
+.testimonial, .footertxt {
   font-family: lora, arial;
-  font-size: 6.4rem;
+  font-size: 3.2rem;
   line-height: 3.2rem;
 }
 
@@ -65,6 +65,14 @@ a {
 a:hover {
   color: #000;
   background-color: #fff;
+}
+
+.socialmediaicons a {
+  border: unset;
+  padding: 0.5rem;
+}
+.socialmediaicons a .socialmediaicons a:hover {
+  background-color: black;
 }
 
 /*IMG POSITION OF ACTION SECTION */
@@ -188,6 +196,7 @@ main {
   /*LAST YEAR */
   /* STUCK */
   /* GOLDEN BEAR */
+  /* POPPY BEAR */
 }
 main .lastyearwrapper {
   color: #fff;
@@ -226,9 +235,125 @@ main .stuckmiddle .txtbeginning h2 {
   line-height: 7rem;
   margin: 2rem 0;
 }
-main .goldenbear {
+main .goldenbear, main .poppybear {
   color: #fff;
   height: 160vh;
+  padding: 25rem 10rem 10rem 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: row;
+}
+main .goldenbear .contentbox, main .poppybear .contentbox {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+main .goldenbear .contentbox div, main .poppybear .contentbox div {
+  margin-bottom: 2rem;
+}
+main .goldenbear .headlinebox, main .poppybear .headlinebox {
+  padding: 0 35vw 0 0;
+  position: relative;
+}
+main .goldenbear .headlinebox p, main .poppybear .headlinebox p {
+  margin-bottom: 2rem;
+}
+main .goldenbear .headlinebox h2, main .poppybear .headlinebox h2 {
+  line-height: 7rem;
+}
+main .goldenbear .headlinebox .bearimg1, main .poppybear .headlinebox .bearimg1 {
+  position: absolute;
+  left: 5%;
+  bottom: -15%;
+  height: auto;
+  width: 50vw;
+  right: 0;
+  z-index: 1;
+}
+main .goldenbear .contentbox, main .poppybear .contentbox {
+  position: relative;
+}
+main .goldenbear .contentbox .bearimg2, main .poppybear .contentbox .bearimg2 {
+  position: absolute;
+  bottom: -11%;
+  left: -2%;
+  z-index: 1;
+  height: auto;
+  width: 30vw;
+}
+main .poppybear {
+  background-color: #fff;
+  color: #000;
+  height: 200vh;
+  position: relative;
+  overflow: hidden;
+}
+main .poppybear .circleanimation {
+  height: 25%;
+  position: absolute;
+  right: -10%;
+  top: -10%;
+  overflow: hidden;
+  animation: rotate-center 8s linear infinite both;
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+main .poppybear .headlinebox .bearimg3 {
+  position: absolute;
+  height: auto;
+  width: 30vw;
+  left: 5%;
+  z-index: 2;
+  top: 35%;
+}
+main .poppybear .contentbox .bearimg4 {
+  position: absolute;
+  height: 55%;
+  bottom: 0%;
+  right: 0;
+  z-index: 1;
+  height: auto;
+  width: 60vw;
+  max-width: unset;
+}
+
+/*FOOTER*/
+footer {
+  color: #fff;
+  padding: 10rem 10rem 10rem 10rem;
+  background-color: #000;
+  height: 100rem;
+  position: relative;
+}
+footer .cta {
+  width: 30vw;
+  margin-bottom: 30rem;
+}
+footer .cta .footertxt, footer .cta p {
+  margin-bottom: 5rem;
+  line-height: 3.5rem;
+}
+footer .socialmediaicons img {
+  width: 1vw;
+}
+footer .footerrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footerrow .rightbox img {
+  width: 30%;
+  padding-right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

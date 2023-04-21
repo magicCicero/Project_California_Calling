@@ -70,5 +70,98 @@ main{
     /* GOLDEN BEAR */
         .goldenbear{
             @include goldenbearstyling;
+            .headlinebox{
+                padding: 0 35vw 0 0;
+                position: relative;
+                    p{
+                        margin-bottom: 2rem;
+                    }
+                    h2{
+                        line-height: 7rem;
+                    }
+                    .bearimg1{
+                        position: absolute;
+                        left: 5%;
+                        bottom:-15%;
+                        height: auto;
+                        width: 50vw;
+                        right: 0;
+                        z-index: 1;
+                    }
+                }
+            .contentbox{
+                position: relative;
+                    .bearimg2{
+                        position: absolute;
+                        bottom: -11%;
+                        left: -2%;
+                        z-index: 1;
+                        height: auto;
+                        width: 30vw; 
+                    }
+            }
+            }
+    /* POPPY BEAR */
+        .poppybear{
+            background-color: $txtcolor_white;
+            @extend .goldenbear;
+            color:$txtcolor_black;
+            height: 200vh;
+            position: relative;
+            overflow: hidden;
+            .circleanimation{
+                height: 25%;
+                position: absolute;
+                right: -10%;
+                top: -10%;
+                overflow: hidden;
+                animation: rotate-center 8s linear infinite both;
+                @keyframes rotate-center {
+                    0% {
+                      -webkit-transform: rotate(0);
+                              transform: rotate(0);
+                    }
+                    100% {
+                      -webkit-transform: rotate(360deg);
+                              transform: rotate(360deg);
+                    }
+                }
+            }
+            .headlinebox{
+                .bearimg3{
+                    position: absolute;
+                    height:auto;
+                    width: 30vw;
+                    left: 5%;
+                    z-index: 2;
+                    top: 35%;
+                }
+            }
+            .contentbox{
+                .bearimg4{
+                    position: absolute;
+                    height:55%;
+                    bottom:0%;
+                    right: 0;
+                    z-index: 1; 
+                    height:auto;
+                    width: 60vw;
+                    max-width: unset;
+                }
+            }
         }
+        }
+
+/*FOOTER*/
+footer{
+   @include footer;
+   position: relative;
+   .footerrow{
+    @include flexrowspace;
+    .rightbox img{
+        width: 30%;
+        padding-right: 1rem;
+    }
+   }
 }
+

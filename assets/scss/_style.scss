@@ -43,9 +43,9 @@ p{
     font-size: $txt_size;
     line-height: 3.2rem;
 }
-.testimonial{
+.testimonial,.footertxt{
     font-family: $firstfont;
-    font-size: $middleheadline_size;
+    font-size: $smallheadline_size;
     line-height: 3.2rem;
 }
 
@@ -61,6 +61,13 @@ a{
         a:hover{
     color: $txtcolor_black;
     background-color: $txtcolor_white;
+}
+.socialmediaicons a{
+    border:unset;
+    padding:0.5rem;
+    .socialmediaicons a:hover{
+        background-color: black;
+    }
 }
 
 /*IMG POSITION OF ACTION SECTION */

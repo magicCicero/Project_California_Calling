@@ -48,4 +48,38 @@
 @mixin goldenbearstyling{
     color: $txtcolor_white;
     height: 160vh;
+    padding: 25rem 10rem 10rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: row;
+    .contentbox{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        div{
+            margin-bottom: 2rem;
+        }
+    }
+}
+@mixin poppybearstyling{
+    height: 200vh;
+}
+
+@mixin footer{
+    color: $txtcolor_white;
+    padding: 10rem 10rem 10rem 10rem;
+    background-color: $txtcolor_black;
+    height: 100rem;
+    .cta{
+        width: 30vw;
+        margin-bottom: 30rem;
+        .footertxt, p{
+            margin-bottom: 5rem;
+            line-height: 3.5rem;
+        }
+    }
+    .socialmediaicons img{
+        width: 1vw;
+    }
 }
