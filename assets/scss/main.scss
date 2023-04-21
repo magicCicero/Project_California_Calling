@@ -1,0 +1,74 @@
+/* IMPORTS */
+@import "variables";
+@import "mixin";
+@import "style";
+
+@font-face {
+    font-family: lora;
+    src: url(../fonts/Lora-SemiBold.ttf);
+}
+@font-face {
+    font-family: work;
+    src: url(../fonts/WorkSans-SemiBold.ttf);
+}
+
+
+/* HEADER */
+header{
+    background-color: $bgcolor;
+    .herowrapper{
+        @include herostyling;
+        .line{
+            object-fit: cover;
+            height:20%;
+            width: 100%;
+        }
+        .titlewrapper{
+            @include flexcolumncenter;
+            .titlebox{
+                max-width: 70%;
+                @include flexcolumncenter;
+                text-align: center;
+                        }
+                    } 
+        .bear_btn{
+            @include flexrowspace;
+            width: 100%;
+        }
+    }
+}
+
+/* MAIN */
+main{
+    background-color: $bgcolor;
+    /*LAST YEAR */
+        .lastyearwrapper{
+            @include lastyearstyling;
+            position: relative;
+            h2{
+                z-index: 2;
+            }
+            img{
+                position: absolute;
+                height:68%;
+                bottom:10%;
+                right: 0;
+            }
+        }
+    /* STUCK */
+        .stuckmiddle{
+            @include stuckmiddlestyling;
+            position: relative;
+            article{
+                max-width: 25%;
+            }
+            .txtbeginning h2{
+                line-height: 7rem;
+                margin:2rem 0 ;
+            }
+        }
+    /* GOLDEN BEAR */
+        .goldenbear{
+            @include goldenbearstyling;
+        }
+}

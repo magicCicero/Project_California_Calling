@@ -1,0 +1,51 @@
+@mixin herostyling{
+    color: $txtcolor_white;
+    padding: 0 10rem 10rem 10rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flexcolumncenter{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+@mixin flexrowspace{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin lastyearstyling{
+    color: $txtcolor_white;
+    padding: 10rem 40rem 10rem 10rem;
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+@mixin stuckmiddlestyling{
+    background-color: $txtcolor_white;
+    color: $txtcolor_black;
+    height: 260vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40rem 0;
+
+}
+@mixin actionimgsizes{
+    position: absolute;
+    object-fit: contain;
+    height:20%;
+    width:22%;
+}
+@mixin goldenbearstyling{
+    color: $txtcolor_white;
+    height: 160vh;
+}

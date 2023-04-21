@@ -1,0 +1,104 @@
+/* STYLING */
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+header{
+    height: 100vh;
+
+}
+img{
+    max-width: 100%;
+}
+
+/*FONT STYLING*/
+h1{
+    font-family: $firstfont;
+    font-size: $bigheadline_size;
+    line-height: 7rem;
+    margin:2rem 0;
+    span{
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px white;
+        
+    }
+}
+h2{
+    font-family: $firstfont;
+    font-size: $bigheadline_size;
+}
+h3{
+    font-family: $firstfont;
+    font-size: $middleheadline_size;
+}
+p{
+    font-family: $secondfont;
+    font-size: $txt_size;
+    line-height: 3.2rem;
+}
+.testimonial{
+    font-family: $firstfont;
+    font-size: $middleheadline_size;
+    line-height: 3.2rem;
+}
+
+/* BTN STYLING */
+
+a{
+    color: $txtcolor_white;
+    font-size: $btnsize;
+    padding: 1.6rem 3.2rem;
+    border: 1px $txtcolor_white solid;
+    transition: all ease-in-out 0.3s;
+    text-decoration: none;}
+        a:hover{
+    color: $txtcolor_black;
+    background-color: $txtcolor_white;
+}
+
+/*IMG POSITION OF ACTION SECTION */
+.action1{
+    @include actionimgsizes;
+    top: -25vh;
+    right: 12vw;
+}
+.action2{
+    @include actionimgsizes;
+    left: 3vw;
+    top:22vh;
+    width:18%
+}
+.action3{
+    @include actionimgsizes;
+    top: 65vh;
+    right: 0;
+    width:18%
+}
+.action4{
+    @include actionimgsizes;
+    bottom:90vh;
+    left: 25vw;  
+}
+.action5{
+    @include actionimgsizes;
+    bottom:80vh;
+    right: 15vw;  
+}
+.action6{
+    @include actionimgsizes;
+    bottom:40vh;
+    left: 0vw;
+    width:18%  
+}
+.action7{
+    @include actionimgsizes;
+    bottom:-25vh;
+    right: 12vw;
+}
