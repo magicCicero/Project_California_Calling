@@ -129,6 +129,7 @@
     }
     footer .footercontent .footerbanner{
         left:unset;
+        
     }
     body footer .footerrow{
         flex-direction: column;
@@ -146,11 +147,5 @@
                 }
             }
         }
-    }
-}
-// MEDIA QUERIES MOBILE//
-@media screen and (max-width: 576px)  {
-    .action3, .action4,.action5{
-        display: none;
     }
 }

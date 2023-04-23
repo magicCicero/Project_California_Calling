@@ -2,7 +2,8 @@
 @import "variables";
 @import "mixin";
 @import "style";
-@import "mediaqueries";
+@import "mediaqueries_tablets";
+@import "mediaqueries_mobile";
 
 @font-face {
     font-family: lora;

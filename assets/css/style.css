@@ -276,10 +276,104 @@ a:hover {
   }
 }
 @media screen and (max-width: 576px) {
-  .action3, .action4, .action5 {
+  .action3, .action4, .action5, .action6, .bearimg1, .bearimg3 {
     display: none;
   }
+  p {
+    font-size: 4.1775456919vw;
+    line-height: 6.6666666667vw;
+  }
+  a {
+    font-size: 5.2219321149vw;
+  }
+  body main .goldenbear .contentbox .bearimg2, body main .poppybear .contentbox .bearimg2 {
+    margin-top: 10rem;
+    position: static;
+    width: unset;
+  }
+  body main .poppybear .contentbox .bearimg4 {
+    margin-top: 10rem;
+    position: static;
+    max-width: unset;
+    width: 100%;
+  }
+  body header .herowrapper {
+    padding: 0 5rem 5rem 5rem;
+  }
+  body header .herowrapper .titlewrapper .titlebox {
+    max-width: 85%;
+  }
+  body main .lastyear {
+    height: 90vh;
+  }
+  body main .lastyear .lastyearwrapper {
+    padding: 0 3rem 3rem 3rem;
+    height: 80vh;
+  }
+  body main .lastyear .lastyearwrapper .facts h3 {
+    font-family: lora, arial;
+    font-size: 12.5326370757vw;
+  }
+  body main .stuckmiddle {
+    padding: 15rem 3rem 10rem 3rem;
+    height: 120vh;
+  }
+  body main .stuckmiddle .action1 {
+    width: 50%;
+    top: -10%;
+  }
+  body main .stuckmiddle .action2 {
+    width: 80%;
+    height: unset;
+    top: 42%;
+    left: 10%;
+  }
+  body main .stuckmiddle .action7 {
+    width: 50%;
+    right: 40vw;
+    bottom: -26vw;
+  }
+  body main .stuckmiddle .txtbeginning h2 {
+    font-size: 8.3550913838vw;
+    margin: 4rem 0;
+  }
+  body main .goldenbear, body main .poppybear {
+    padding: 15rem 3rem 10rem 3rem;
+    height: 100vh;
+  }
+  body main .goldenbear .headlinebox, body main .poppybear .headlinebox {
+    padding: unset;
+  }
+  body main .goldenbear .headlinebox h2, body main .poppybear .headlinebox h2 {
+    font-size: 8.3550913838vw;
+  }
 }
+body footer {
+  padding: 10rem 3rem 10rem 3rem;
+  height: 110vh;
+}
+body footer .footercontent {
+  height: 35vh;
+}
+body footer .footercontent .cta {
+  margin-bottom: 15rem;
+}
+body footer .footercontent .cta .join {
+  font-size: 4.1775456919vw;
+}
+body footer .footercontent .cta .footertxt p {
+  font-size: 6.1775456919vw;
+  line-height: 6vw;
+}
+body footer .footercontent .footerbanner {
+  padding: 4vw;
+  width: 469vw;
+  top: unset;
+}
+body footer .footercontent .footerbanner h2 {
+  font-size: 11.5vw;
+}
+
 @font-face {
   font-family: lora;
   src: url(../fonts/Lora-SemiBold.ttf);

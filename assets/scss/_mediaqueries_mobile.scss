@@ -1,0 +1,115 @@
+// MEDIA QUERIES MOBILE//
+@media screen and (max-width: 576px)  {
+    .action3, .action4,.action5, .action6, .bearimg1, .bearimg3{
+        display: none;
+    }
+    p{
+            font-size:calc($txt_size * 4) ;
+            line-height: calc(1.6666666666666667vw * 4);
+    }
+    a{
+            font-size: calc($btnsize * 4) ;
+    }
+    
+    body main .goldenbear .contentbox .bearimg2{
+        margin-top: 10rem;
+        position:static;
+        width: unset;
+    }
+    body main .poppybear .contentbox .bearimg4{
+        margin-top: 10rem;
+        position:static;
+        max-width: unset;
+        width: 100%;
+    }
+    body {
+        header {
+        .herowrapper{
+            padding: 0 5rem 5rem 5rem;
+            .titlewrapper{
+                .titlebox{
+                    max-width: 85%;
+                }
+            }
+                    }
+                }
+        main{
+            .lastyear{
+                height: 90vh;
+                .lastyearwrapper{
+                    padding: 0 3rem 3rem 3rem;  
+                    height: 80vh;
+                    .facts{
+                        h3{
+                                font-family: $firstfont;
+                                font-size: calc($middleheadline_size * 3) ;
+                            }
+                        }
+                    } 
+                }
+            .stuckmiddle{
+                padding: 15rem 3rem 10rem 3rem;
+                height: 120vh;
+                .action1{
+                    width: 50%;
+                    top:-10%;
+                }
+                .action2{
+                    width: 80%;
+                    height: unset;
+                    top:42%;
+                    left:10%
+                }
+                .action7{
+                    width: 50%;
+                    right:40vw;
+                    bottom:-26vw;
+                }
+                .txtbeginning{
+                    h2{
+                        font-size: calc($middleheadline_size * 2);
+                        margin:4rem 0;
+                    }
+                }
+            }
+            .goldenbear{
+                padding: 15rem 3rem 10rem 3rem;
+                height: 100vh;
+                .headlinebox{
+                    padding:unset;
+                    h2{
+                        font-size: calc($middleheadline_size * 2);
+                        }
+                    }
+                    }
+                }                    
+            }
+            }
+        body footer{
+            padding: 10rem 3rem 10rem 3rem;
+            height: 110vh;
+            .footercontent{
+                height: 35vh;
+                .cta{
+                    margin-bottom: 15rem;
+                        .join{
+                        font-size: 4.1775456919vw;}
+                        .footertxt{
+                            p{
+                                font-size: 6.1775456919vw;
+                                line-height: 6vw;
+                            }
+                        }
+                    }
+                .footerbanner{
+                    padding: 4vw;
+                    width: 469vw;
+                    top: unset;
+                    h2{
+                        font-size: 11.5vw;
+                    }
+
+                }
+                }
+            }
+    
