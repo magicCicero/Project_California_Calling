@@ -2,8 +2,10 @@
 @import "variables";
 @import "mixin";
 @import "style";
+@import "animations";
 @import "mediaqueries_tablets";
 @import "mediaqueries_mobile";
+
 
 @font-face {
     font-family: lora;
@@ -51,10 +53,7 @@ main{
                 z-index: 2;
             }
             img{
-                position: absolute;
-                height:68%;
-                bottom:10%;
-                right: 0;
+                @include lastyearimgmap;
             }
         }
     /* STUCK */
@@ -65,9 +64,7 @@ main{
                 max-width: 25%;
             }
             .txtbeginning h2{
-                line-height: 3.6458333333333335vw;
-                // line-height: 7rem;
-                margin:2rem 0 ;
+                @include stuckh2;
             }
         }
     /* GOLDEN BEAR */
@@ -83,15 +80,6 @@ main{
                         line-height: 3.6458333333333335vw;
                         // line-height: 7rem;
                     }
-                    .bearimg1{
-                        position: absolute;
-                        left: 5%;
-                        bottom:-15%;
-                        height: auto;
-                        width: 50vw;
-                        right: 0;
-                        z-index: 1;
-                    }
                 }
             .contentbox{
                 position: relative;
@@ -99,69 +87,14 @@ main{
                     p{ 
                         @include testimonialstyling;
                     }
-                }
-                    .bearimg2{
-                        position: absolute;
-                        bottom: -11%;
-                        left: -2%;
-                        z-index: 1;
-                        height: auto;
-                        width: 30vw; 
-                    }
-            }
+                }}
             }
     /* POPPY BEAR */
         .poppybear{
-            background-color: $txtcolor_white;
             @extend .goldenbear;
-            color:$txtcolor_black;
-            height: 200vh;
-            position: relative;
-            overflow: hidden;
-            .circleanimation{
-                height: 25%;
-                position: absolute;
-                right: -10%;
-                top: -10%;
-                overflow: hidden;
-                animation: rotate-center 8s linear infinite both;
-                @keyframes rotate-center {
-                    0% {
-                      -webkit-transform: rotate(0);
-                              transform: rotate(0);
-                    }
-                    100% {
-                      -webkit-transform: rotate(360deg);
-                              transform: rotate(360deg);
-                    }
-                }
-            }
-            .headlinebox{
-                .bearimg3{
-                    position: absolute;
-                    height:70vh;
-                    width: 30vw;
-                    left: 5%;
-                    z-index: 2;
-                    top: 35%;
-                }
-            }
-            .contentbox{
-                .bearimg4{
-                    position: absolute;
-                    height:55%;
-                    bottom:10%;
-                    right: 0;
-                    z-index: 1; 
-                    height:70%;
-                    width: 60vw;
-                    max-width: unset;
-                    
-                }
-            }
+            @include poppybearstyling;
         }
-        }
-
+    }
 /*FOOTER*/
 footer{
    @include footer;
@@ -169,6 +102,24 @@ footer{
    overflow: hidden;
    .footerrow{
     @include flexrowspace;
+    .leftbox{
+        .socialmediaicons{
+            margin-bottom: 1rem;
+            a{
+                padding:2rem 1rem 1rem 1rem;
+
+               img{
+                width: 2vw;
+               }  
+            }
+            a:hover {
+                img{
+                    filter: invert(1);
+                    
+                }
+            }
+        }
+    }
     .rightbox img{
         width: 30%;
         padding-right: 1rem;
@@ -176,42 +127,13 @@ footer{
    }
 }
 .footercontent .footerbanner {
-    width: 220vw;
-    padding: 4rem;
-    background-color: #fff;
-    transform: translate(-30%, 150%) rotate(45deg);
-    position: absolute;
-    margin-left: 35vw;
-    top: 0;
-    left: 0;
-
+@include footerbanner;
   }
   .footertxt{
     p{
        @include testimonialstyling; 
     }
   }
-  .footercontent h2 {
-    color: #000;
-    animation: footerbanner 10s linear infinite;
-  }
-  .footercontent span {
-    color: #000;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 2px black;
-  }
 .footertxt{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-
+    @include flexspaceend;
 }
-@keyframes footerbanner {
-    0%, 100% {
-      transform: translateX(20%);
-    }
-    50% {
-      transform: translateX(-20%);
-    }
-  }
-

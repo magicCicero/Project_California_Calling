@@ -19,6 +19,11 @@
     justify-content: space-between;
     align-items: center;
 }
+@mixin flexspaceend{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 @mixin lastyearstyling{
     color: $txtcolor_white;
     padding: 10rem 40rem 10rem 10rem;
@@ -27,6 +32,12 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+}
+@mixin lastyearimgmap{
+    position: absolute;
+    height:68%;
+    bottom:10%;
+    right: 0;
 }
 @mixin stuckmiddlestyling{
     background-color: $txtcolor_white;
@@ -37,7 +48,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 40rem 0;
-
+}
+@mixin stuckh2{
+    line-height: 3.6458333333333335vw;
+    // line-height: 7rem;
+    margin:2rem 0 ;
 }
 @mixin actionimgsizes{
     position: absolute;
@@ -70,9 +85,12 @@
 }
 
 @mixin poppybearstyling{
+    background-color: $txtcolor_white;
+    color:$txtcolor_black;
     height: 200vh;
+    position: relative;
+    overflow: hidden;
 }
-
 @mixin footer{
     color: $txtcolor_white;
     padding: 10rem 10rem 10rem 10rem;
@@ -95,4 +113,14 @@
     .socialmediaicons img{
         width: 1vw;
     }
+}
+@mixin footerbanner{
+    width: 220vw;
+    padding: 4rem;
+    background-color: #fff;
+    transform: translate(-30%, 150%) rotate(45deg);
+    position: absolute;
+    margin-left: 35vw;
+    top: 0;
+    left: 0;
 }

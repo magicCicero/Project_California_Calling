@@ -1,0 +1,32 @@
+.circleanimation{
+    height: 25%;
+    position: absolute;
+    right: -10%;
+    top: -10%;
+    overflow: hidden;
+    animation: rotate-center 8s linear infinite both;
+    @keyframes rotate-center {
+        0% {
+          -webkit-transform: rotate(0);
+                  transform: rotate(0);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+        }
+    }
+}
+.footercontent{
+    h2{
+        color: #000;
+        animation: footerbanner 10s linear infinite;
+    }
+    @keyframes footerbanner {
+        0%, 100% {
+          transform: translateX(20%);
+        }
+        50% {
+          transform: translateX(-20%);
+        }
+      }
+  }

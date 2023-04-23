@@ -53,6 +53,11 @@ p{
     line-height: 1.6666666666666667vw;
     // line-height: 3.2rem;
 }
+.footercontent span {
+    color: #000;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px black;
+  }
 
 /* BTN STYLING */
 
@@ -115,3 +120,39 @@ a{
     bottom:-25vh;
     right: 12vw;
 }
+/*IMG POSITION OF BEAR SECTIONS */
+.bearimg1{
+    position: absolute;
+    left: 5%;
+    bottom:-15%;
+    height: auto;
+    width: 50vw;
+    right: 0;
+    z-index: 1;
+}
+.bearimg2{
+    position: absolute;
+    bottom: -11%;
+    left: -2%;
+    z-index: 1;
+    height: auto;
+    width: 30vw; }
+.bearimg3{
+    position: absolute;
+    height:70vh;
+    width: 30vw;
+    left: 5%;
+    z-index: 2;
+    top: 35%;
+}
+.bearimg4{
+    position: absolute;
+    height:55%;
+    bottom:10%;
+    right: 0;
+    z-index: 1; 
+    height:70%;
+    width: 60vw;
+    max-width: unset;
+}
+
