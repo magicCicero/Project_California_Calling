@@ -22,8 +22,10 @@ img{
 h1{
     font-family: $firstfont;
     font-size: $bigheadline_size;
-    line-height: 7rem;
-    margin:2rem 0;
+    line-height: 3.6458333333333335vw;
+    // line-height: 7rem;
+    margin:1.0416666666666667vw 0;
+    // margin:2rem 0;
     span{
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 1px white;
@@ -33,6 +35,7 @@ h1{
 h2{
     font-family: $firstfont;
     font-size: $bigheadline_size;
+    
 }
 h3{
     font-family: $firstfont;
@@ -41,12 +44,14 @@ h3{
 p{
     font-family: $secondfont;
     font-size: $txt_size;
-    line-height: 3.2rem;
+    line-height: 1.6666666666666667vw;
+    // line-height: 3.2rem;
 }
-.testimonial,.footertxt{
+.footertxt{
     font-family: $firstfont;
     font-size: $smallheadline_size;
-    line-height: 3.2rem;
+    line-height: 1.6666666666666667vw;
+    // line-height: 3.2rem;
 }
 
 /* BTN STYLING */
@@ -54,7 +59,8 @@ p{
 a{
     color: $txtcolor_white;
     font-size: $btnsize;
-    padding: 1.6rem 3.2rem;
+    padding: 0.8333333333333334vw 1.6666666666666667vw;
+    // padding: 1.6rem 3.2rem;
     border: 1px $txtcolor_white solid;
     transition: all ease-in-out 0.3s;
     text-decoration: none;}

@@ -57,11 +57,18 @@
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        div{
-            margin-bottom: 2rem;
-        }
     }
 }
+
+@mixin testimonialstyling{
+    margin-bottom: 1.0416666666666667vw;
+    line-height: 2.5vw;
+    // margin-bottom: 2rem;
+    font-family: $firstfont;
+    font-size: $smallheadline_size;
+
+}
+
 @mixin poppybearstyling{
     height: 200vh;
 }
@@ -72,11 +79,17 @@
     background-color: $txtcolor_black;
     height: 100rem;
     .cta{
-        width: 30vw;
+        width: 40vw;
         margin-bottom: 30rem;
-        .footertxt, p{
+        .join{
+            font-family: $secondfont;
+            font-size: $txt_size;
+        }
+        .footertxt{
+            p{
             margin-bottom: 5rem;
-            line-height: 3.5rem;
+            line-height: 4.5rem;
+        }
         }
     }
     .socialmediaicons img{
